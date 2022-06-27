@@ -16,7 +16,6 @@ nav {
 }
 
 nav .menu {
-    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     padding: 13px 70px;
