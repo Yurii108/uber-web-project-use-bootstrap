@@ -84,7 +84,7 @@ nav
 
 .promo
   min-height: 800px
-  background-image: url(../img/bg/main_bg.jpg)
+  background: url(../img/bg/main_bg.jpg) center (center / cover) no-repeat
   padding: 150px 0 135px 0
 
   .promo_header
@@ -138,7 +138,7 @@ nav
 .advantage
   padding: 71px 0 65px 0
 
-.advantage_header
+.label
   margin: 0 auto
   width: 112px
   height: 24px
@@ -148,14 +148,23 @@ nav
   padding: 5px 12px
   text-transform: uppercase
   color: #ffffff
+  text-align: center
+  
 
-.advantage_subheader
-  margin: 38px auto 0 auto
+.title
+  margin: 33px auto 0 auto
   font-style: normal
   font-weight: 700
   font-size: 38px
   text-align: center
   text-transform: uppercase
+
+.subtitle
+  margin-top: 8px
+  font-weight: 400 
+  font-size: 17px 
+  text-align: center
+  color: #222222
 
 .advantage .reasons_block
   display: flex
@@ -187,3 +196,53 @@ nav
       font-size: 15px
       font-weight: 300
       line-height: 21px
+
+.mobile
+  min-height: 864px
+  padding: 46px 0 80px 0
+  background: url(../img/bg/mobile_app.png) center (center / cover) no-repeat
+  .row 
+    margin-top: 32px
+  &_item
+    position: relative
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 90px
+    &_1
+      background: url('../img/bg/mobile_screen_1.jpg') center (center / cover) no-repeat
+    &_2
+      background: url('../img/bg/mobile_screen_2.jpg') center (center / cover) no-repeat
+    &_3
+      background: url('../img/bg/mobile_screen_3.jpg') center (center / cover) no-repeat
+    &_4
+      background: url('../img/bg/mobile_screen_4.jpg') center (center / cover) no-repeat
+    &_5
+      background: url('../img/bg/mobile_screen_5.jpg') center (center / cover) no-repeat
+    &_6
+      background: url('../img/bg/mobile_screen_6.jpg') center (center / cover) no-repeat
+    &_subtitel
+      color: #FFFFFF
+      font-weight: 400
+      font-size: 24px
+      line-height: 31px
+      text-align: center
+    &_plus
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 30px
+      left: 50%
+      transform: translateX(-50%)     
+      width: 29px
+      height: 29px
+      background: #000000
+      border-radius: 100%
+      margin: 0 auto
+      cursor: pointer
+      
+
+
+      
