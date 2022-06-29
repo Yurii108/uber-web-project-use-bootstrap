@@ -1,3 +1,11 @@
+$blue_color: #1eacc7
+$red_color: #FF5656
+
+=btn_hover
+  &:hover
+    background-image: none
+    background: $blue_color
+
 *
   font-family: 'Roboto', sans-serif
 
@@ -10,7 +18,7 @@ nav
   width: 100%
   height: 50px
   background-color: #212121
-  z-index: 2
+  z-index: 5
 
   .menu
     display: flex
@@ -70,7 +78,7 @@ nav
     margin-top: 20px
     width: 172px
     height: 46px
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
     box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12)
     border-radius: 4px
     border: none
@@ -81,6 +89,7 @@ nav
     text-transform: uppercase
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
 
 .promo
   min-height: 800px
@@ -122,7 +131,7 @@ nav
     margin: 115px auto 0 auto
     width: 259px
     height: 63px
-    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%)
+    background: linear-gradient(0deg, $blue_color 0%, #4CE2FF 100%)
     box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
     border-radius: 4px
     border: 0
@@ -134,6 +143,7 @@ nav
     text-transform: uppercase
     color: #FFFFFF
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+    +btn_hover
 
 .advantage
   padding: 71px 0 65px 0
@@ -193,7 +203,7 @@ nav
     margin-right: 26px
     width: 113px
     height: 113px
-    background-color: #1eacc7
+    background-color: $blue_color
     border-radius: 100%
 
   .reasons_descr
@@ -201,7 +211,7 @@ nav
 
     .reasons_subtitle
       line-height: 21px
-      color: #1eacc7
+      color: $blue_color
       font-size: 17px
       font-weight: 400
 
@@ -256,6 +266,24 @@ nav
       border-radius: 100%
       margin: 0 auto
       cursor: pointer
+      &::before
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        content: ''
+        height: 14px
+        width: 2px
+        background: $blue_color
+        transition: 0.3s all
+      &::after
+        content: ''
+        height: 2px
+        width: 14px
+        background: $blue_color
+        transition: 0.3s all
+      &:hover
+        &::before, &::after
+          background: $red_color
 
 .choice
   position: relative
@@ -281,3 +309,34 @@ nav
     width: 100%
     background-color: #070716
     z-index: 1
+
+.require
+  padding: 66px 0 87px 0
+  &_block
+    margin: 32px 0
+    &_mbn
+      margin-bottom: 0px
+  &_title
+    color: #1CA8C3
+    font-weight: 400
+    font-size: 22px
+  &_list
+    margin-top: 22px
+    list-style-type: none
+    margin-left: 50px
+    li
+      position: relative
+      font-weight: 300
+      font-size: 17px
+      line-height: 24px
+      margin-bottom: 10px
+      color: #222222
+      &::before
+        content: ''
+        display: block
+        position: absolute
+        left: -32px
+        top: 3px
+        width: 21px
+        height: 20px
+        background: url('../icons/check_blue.svg') center (center / cover) no-repeat
