@@ -139,32 +139,46 @@ nav
   padding: 71px 0 65px 0
 
 .label
+  position: relative
   margin: 0 auto
-  width: 112px
   height: 24px
-  background: #000000
-  font-weight: 400
-  font-size: 11px
+  width: 112px
   padding: 5px 12px
-  text-transform: uppercase
+  background-color: #000000
   color: #ffffff
+  font-size: 11px
+  font-weight: 300
+  text-transform: uppercase
   text-align: center
-  
+  z-index: 2
+  &_white
+    background-color: #fff
+    color: #000
 
 .title
-  margin: 33px auto 0 auto
-  font-style: normal
-  font-weight: 700
+  position: relative
+  margin-bottom: 0
+  margin-top: 38px
+  color: #222222
   font-size: 38px
-  text-align: center
+  line-height: 38px
+  font-weight: 700
   text-transform: uppercase
+  text-align: center
+  z-index: 2
+  &_white
+    color: #fff
 
 .subtitle
-  margin-top: 8px
-  font-weight: 400 
-  font-size: 17px 
-  text-align: center
+  position: relative
+  margin-top: 19px
   color: #222222
+  font-size: 17px
+  font-weight: 400
+  text-align: center
+  z-index: 2
+  &_white
+    color: #fff
 
 .advantage .reasons_block
   display: flex
@@ -201,7 +215,7 @@ nav
   min-height: 864px
   padding: 46px 0 80px 0
   background: url(../img/bg/mobile_app.png) center (center / cover) no-repeat
-  .row 
+  .row
     margin-top: 32px
   &_item
     position: relative
@@ -235,14 +249,35 @@ nav
       position: absolute
       bottom: 30px
       left: 50%
-      transform: translateX(-50%)     
+      transform: translateX(-50%)
       width: 29px
       height: 29px
       background: #000000
       border-radius: 100%
       margin: 0 auto
       cursor: pointer
-      
 
-
-      
+.choice
+  position: relative
+  min-height: 895px
+  padding: 57px 0 138px 0
+  background: url('../img/bg/mobile_app.png') center (center / cover) no-repeat
+  &_img
+    position: relative
+    display: block
+    margin: 56px auto 0 auto
+    z-index: 2
+  &_descr
+    text-align: center
+    color: #222222
+    font-size: 17px
+    font-weight: 300
+    line-height: 24px
+  .black
+    position: absolute
+    top: 0
+    left: 0
+    height: 499px
+    width: 100%
+    background-color: #070716
+    z-index: 1
