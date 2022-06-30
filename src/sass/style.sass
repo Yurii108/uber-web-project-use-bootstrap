@@ -323,7 +323,7 @@ nav
   &_list
     margin-top: 22px
     list-style-type: none
-    margin-left: 50px
+    margin-left: 19px
     li
       position: relative
       font-weight: 300
@@ -340,3 +340,76 @@ nav
         width: 21px
         height: 20px
         background: url('../icons/check_blue.svg') center (center / cover) no-repeat
+  &_descr
+    font-weight: 300
+    font-size: 17px
+    line-height: 24px
+    color: #1CA8C3
+  .warning
+    .require_title
+      color: $red_color
+    .require_list
+      li
+        &::before
+          background: url('../icons/check_red.svg') center (center / cover) no-repeat
+
+.city
+  position: relative
+  height: 720px
+  padding: 49px 0 22px 0
+  background: url('../img/bg/map.jpg') center (center / cover) no-repeat
+  &_see
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    padding: 446px 0 21px 0
+    a
+      font-weight: 400
+      font-size: 15px
+      line-height: 68px
+      text-transform: uppercase
+      color: #1FBAD6
+  .subtitle_white
+    margin-top: 8px
+
+.footer
+  height: 156px
+  padding: 13px 22px 10px 22px
+  &_line
+    width: 299px
+    height: 4px
+    background: #1FBAD6
+    display: block
+    margin: 0 auto
+  &_link
+    width: 390px
+    margin: 32px auto 0 auto
+    &_main
+      display: flex
+      justify-content: space-between
+      padding: 0 10px
+      a
+        font-weight: 300
+        font-size: 15px
+        text-transform: uppercase
+        color: #070716
+    &_sub
+      display: flex
+      justify-content: space-between
+      margin-top: 10px
+      a
+        font-weight: 300
+        font-size: 11px
+        text-transform: uppercase
+        color: #999999
+  &_language
+    position: absolute
+    margin-top: 5px
+    left: 50%
+    transform: translateX(-50%)
+    a
+      
+      font-weight: 400
+      font-size: 11px
+      text-transform: uppercase
+      color: #1FBAD6
